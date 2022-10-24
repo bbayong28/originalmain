@@ -1,0 +1,178 @@
+ .sub #header{
+    position: relative;
+    line-height: 100px;
+    background: #fff;
+    /* border-bottom: 1px solid rgba(51, 51, 51, 0.5); */
+    color: #333;
+}
+ .sub #header h1 a{
+    display: block;
+}
+
+
+ .sub #header h1 .before{
+    display: none;
+}
+
+ .sub #header h1 .after{
+    display:inline-block;  
+}
+
+ .sub #header .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ .sub #header .gnb>ul{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+}
+
+ .sub #header .gnb>ul>li{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+ .sub #header .gnb>ul>li:hover>a{
+    color: rgb(254, 112, 61);
+}
+
+ .sub #header .gnb a{
+    display: block;
+}
+
+ .sub #header .gnb>ul>li ul {    
+    display: block;
+    position: absolute;
+    top: 100px;    
+    left: 50%;
+    z-index: 999;
+    width: 130px;
+    height: 0;
+    line-height: 55px;
+    text-align: center;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: 0.5s;
+    background: #fff;
+}
+
+ .sub #header .gnb>ul>li ul li{
+    position: relative;
+    border-bottom: 1px solid #ddd;   
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ .sub #header .gnb>ul>li .non li:last-child{
+    border-bottom: none;
+} 
+
+ .sub #header .gnb>ul>li ul li:hover{
+    color: #fe703d;
+}
+
+ .sub #header .gnb>ul::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+ .sub #header .gnb>ul:hover>li ul,
+ .sub #header .gnb>ul:hover::before {
+    height: 285px;
+}
+
+
+ .sub #header .container .util i{
+    cursor: pointer;
+    font-size: 25px;
+    vertical-align: -2px;
+    color: #333;
+}
+
+ .sub #header .container .util i:nth-child(1){
+    margin-right: 20px;
+}
+/* ------------------------------------------------------------------- */
+.promotion .topBanner{
+    width: 100%;
+}
+.promotion .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner04.jpg) no-repeat center center / cover;
+    color: white;
+}
+.promotion .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.promotion .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.promotion .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.promotion_main{
+    padding: 100px 0;
+    height: 100%;
+}
+.promotion_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.promotion_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.promotion_main .text{
+    background: url(../img/promotion_bg.jpg) no-repeat center center / cover;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 80px 50px;
+}
+.promotion_main .text img{
+    margin-bottom: 20px;
+}
+.promotion_main .text p{
+    color:#fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.promotion_main  .concept{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion_main .concept .left{
+    width: 30%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.promotion_main .concept .right {
+    font-size: 22px;
+    margin-bottom: 40px;  
+    line-height: 1.4;
+}

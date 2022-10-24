@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jackson chameleon</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/swiper.css" />
+  <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/response.css" />
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/common.js"></script>
+</head>
+
+<body>
+  <div class="Wrap">
+
+
+    <header id="header">
+      <div class="container">
+        <h1>
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </h1>
+        <nav class="gnb">
+          <ul>
+            <ul>
+              <li><a href="./story.html">STORY</a></li>
+              <li><a href="./product.html">PRODUCT</a></li>
+              <li><a href="./project.html">PROJECT</a></li>
+              <li><a href="./business.html">BUSINESS</a></li>
+              <li><a href="./contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <ul class="sub">
+          <li>
+            <a href="">
+              <img src="./img/user.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/location.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/shopping-bag.png" alt="" />
+            </a>
+          </li>
+        </ul>
+        <div class="m__open">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main class="m_contactUs">
+      <section class="gaip">
+        <div class="container">
+          <div class="top">
+            <h3>CONTACT US</h3>
+            <span>BTOB 관련 상담을 원하시는 고객께서는 언제든지 아래의 방법으로 문의 바랍니다.</span>
+          </div>
+          <div class="bottom">
+            <div class="write_content">
+              <div class="title border">
+                <span>"<span class="red">&#42;</span>"필수 사항 입니다.</span>
+              </div>
+              <table class="table border">
+                <tr>
+                  <th>제목<span class="red">&#42;</span></th>
+                  <td>
+                    <input type="text" maxlength="300" class="caption" style="width:97.5%">
+                  </td>
+
+                </tr>
+                <tr>
+                  <th>분야<span class="red">&#42;</span></th>
+                  <td>
+                    <select name="field" id="field" class="selectBox" style="width:100%;">
+                      <option value="field">질문분야를 선택해주세요.</option>
+                      <option>실업자계좌제훈련/훈련상담/실업자국기직종훈련/국민내일배움카드/K-디지털트레이닝</option>
+                      <option>근로자훈련/국민내일배움카드/K-디지털기초역량/중장년새출발카운슬링</option>
+                      <option>사업주지원훈련/지역실업자/지산일</option>
+                      <option>일학습병행제/과정평가형</option>
+                      <option>컨소시엄훈련/지역산업맞춤형/고용디딤돌/청년취업아카데미</option>
+                      <option>지도점검/부정수급/전자민원서비스</option>
+                      <option>HRD-Net 홈페이지/모바일 서비스/전자민원/지도점검/부정수급</option>
+                      <option>통합심사/이수자평가/인증평가/훈련교사</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>공개여부</th>
+                  <td class="source">
+                    <div class="checks">
+                      <input type="radio" name="disclosure" id="open" checked>
+                      <label for="open">공개</label>
+                    </div>
+                    <div class="checks">
+                      <input type="radio" name="disclosure" id="nopen">
+                      <label for="nopen">비공개</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    내용<span class="red">&#42;</span>
+                  </th>
+                  <td class="mmmmmm">
+                    <form id="frm_textArea" name="frm_textArea">
+                      <textarea cols="100" rows="8" class="form-control" id="textArea_byteLimit"
+                        name="textArea_byteLimit" onkeyup="fn_checkByte(this)"
+                        placeholder="HRD-Net 고객센터는 HRD-Net 전산시스템의 사용법, 장애사항, 개선의견 등을 접수하여 답변드리고 있습니다. 국민내일배움카드 발급 지원자격 문의, 장려금 지원 등 행정업무에 대한 상담은 고용노동부 고객상담센터에서 지원중이므로 고용노동부 고객센텨(1350 유료)으로 문의하여 주시기 바랍니다. 또한, 내용입력시 개인정보(주민번호)가 있을 경우 정보가 노출될 수 있으므로 유의하여 주시고 개인정보가 없을 경우는 가급정 공개로 하셔서 많은 분들과 내용을 공유하시기 바랍니다."
+                        style="padding:10px; resize: none; outline: none; margin-bottom: 10px;"></textarea>
+                    </form>
+                    <p style="margin-bottom:5px;">한글 1500자, 영문 3000자 까지 입력 가능합니다.</p>
+                    <sup>(<span id="nowByte">0</span>/3000bytes)</sup>
+                  </td>
+                </tr>
+                <tr>
+                  <th>파일첨부(선택)</th>
+                  <td>
+                    <div class="file_box">
+                      <div class="filebox preview-image">
+                        <img src="../img_default.png" alt="" class="upload-display">
+                        <input type="file" id="input-file01" class="upload-hidden">
+                        <label for="input-file01" style="background:url(../btn-imgadd.png) no-repeat"></label>
+                        <p class="file_name">파일명</p>
+                      </div>
+                      <div class="filebox preview-image">
+                        <img src="../img_default.png" alt="" class="upload-display">
+                        <input type="file" id="input-file02" class="upload-hidden">
+                        <label for="input-file02" style="background:url(../btn-imgadd.png) no-repeat"></label>
+                        <p class="file_name">파일명</p>
+                      </div>
+                      <div class="filebox preview-image">
+                        <img src="../img_default.png" alt="" class="upload-display">
+                        <input type="file" id="input-file03" class="upload-hidden">
+                        <label for="input-file03" style="background:url(../btn-imgadd.png) no-repeat"></label>
+                        <p class="file_name">파일명</p>
+                      </div>
+                    </div>
+                    <div class="txt">
+                      <p>이미지 가능 확장자 : jpg, gif,bmp</p>
+                      <p>파일 가능 확장자 : txt,hwp,xls,ppt,doc,zip,pdf</p>
+                      <p style="margin-bottom:0;">첨부파일은 한 개 등록 가능하며 사이즈를 1M로 제한합니다.</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal_information">
+              <div class="title">
+                <h3>개인정보 수집 및 이용에 대한 동의</h3>
+              </div>
+              <div class="box">
+                <p>HRD-Net 서비스 민원 상담을 위해 성명, 연락처를 수집 및 이용합니다.</p>
+                <p>( 수집목적 : HRD-Net 서비스 민원상담, 보유기간:5년 )</p>
+                <p>개인정보 수집 및 취급 위탁에 동의하시지 않는 경우 개선 및 제안요청 작성이 불가능합니다.</p>
+              </div>
+              <div class="agree">
+                <p>개인정보 수집 및 이용에 동의 하십니까?</p>
+                <div class="input">
+                  <div class="checks">
+                    <input id="y" type="radio" name="agree" checked>
+                    <label for="y">동의합니다.</label>
+                  </div>
+                  <div class="checks">
+                    <input id="n" type="radio" name="agree">
+                    <label for="n">동의하지 않습니다.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+    <footer id="footer">
+
+      <div class="top">
+        <div class="container">
+          <h4>
+            <img src="./img/logo_w.png" alt="">
+          </h4>
+          <ul>
+            <li><a href="#!">시각장애인 서비스 지원</a></li>
+            <li><a href="#!">이용안내</a></li>
+            <li><a href="#!">문의하기</a></li>
+            <li><button class="modalOpen">개인정보 취급방침</button></li>
+          </ul>
+          <div class="sns">
+            <a href="#!"><i class="xi-kakaotalk"></i></a>
+            <a href="#!"><i class="xi-instagram"></i></a>
+            <a href="#!"><i class="xi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="in_top">
+            <p>(주) 잭슨카멜레온</p>
+            <p>대표자명 : 송재영 정봉윤 황두현</p>
+            <p>사업자 등록번호 : 230-81-50256</p>
+            <p>이메일 : contact.kr@massimodutti.com</p>
+            <p>주소 : 경기도 포천시 군내면 용정경제로2길 13 1층</p>
+          </div>
+          <div class="link">
+            <select id="linkSite">
+              <option value="">FAMILY SITE</option>
+              <option value="https://naver.com">NAVER</option>
+              <option value="https://daum.net">DAUM</option>
+              <option value="https://google.com">GOOGLE</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+<<<<<<< HEAD
+    <!-- footer 끝 -->  
+    <div class="modal_contents">
+      <div class="modal">
+        <h4>개인정보 취급 방침</h4>
+        <div class="des">
+
+=======
+    <!-- footer 끝 -->
+    <div class="modal">
+      <div class="modal_inner">
+        <h4>개인정보 취급 방침</h4>
+        <div class="des">
+>>>>>>> 1643eae92642b0e1b3c51b59a2dc18701a5ee88b
+          <strong>■ 수집하는 개인정보 항목</strong>
+          <p>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+          <span>ο 수집항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 회사명 , 부서 , 직책
+            ,
+            회사전화번호 , 취미 , 결혼여부 , 기념일 , 법정대리인정보 , 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록</span>
+          <span>ο 개인정보 수집방법 : 홈페이지(회원가입) , 서면양식</span>
+<<<<<<< HEAD
+
+
+=======
+    
+    
+>>>>>>> 1643eae92642b0e1b3c51b59a2dc18701a5ee88b
+          <strong>■ 개인정보의 수집 및 이용목적</strong>
+          <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+          <span>ο 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송</span>
+          <span>ο 회원 관리</span>
+          <span>회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 연령확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인 , 고지사항 전달</span>
+          <span>ο 마케팅 및 광고에 활용</span>
+          <span>접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계</span>
+<<<<<<< HEAD
+
+          <strong>■ 개인정보의 보유 및 이용기간</strong>
+          <p>회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
+
+=======
+    
+          <strong>■ 개인정보의 보유 및 이용기간</strong>
+          <p>회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
+    
+>>>>>>> 1643eae92642b0e1b3c51b59a2dc18701a5ee88b
+          <strong>■ 개인정보의 파기절차 및 방법</strong>
+          <p>회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.</p>
+          <span>ο 파기절차</span>
+          <span>회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간
+            참조) 일정 기간 저장된 후 파기되어집니다.</span>
+          <span>별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.</span>
+          <span>ο 파기방법</span>
+          <span>- 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</span>
+        </div>
+        <div class="btn">
+          <button class="modalClose">close</button>
+        </div>
+      </div>
+<<<<<<< HEAD
+      <div class="modal_background"></div>
+=======
+    
+>>>>>>> 1643eae92642b0e1b3c51b59a2dc18701a5ee88b
+    </div>
+    
+
+    
+
+  </div>
+</body>
+
+</html>
