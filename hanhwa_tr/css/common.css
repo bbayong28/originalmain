@@ -116,116 +116,6 @@
     margin-right: 20px;
 } 
 /* --------------------------------header-------------------------------- */
-/* --------------------------------sub header-------------------------------- */
- .sub #header{
-    position: relative;
-    line-height: 100px;
-    background: #fff;
-    /* border-bottom: 1px solid rgba(51, 51, 51, 0.5); */
-    color: #333;
-}
- .sub #header h1 a{
-    display: block;
-}
-
-
- .sub #header h1 .before{
-    display: none;
-}
-
- .sub #header h1 .after{
-    display:inline-block;  
-}
-
- .sub #header .container{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
- .sub #header .gnb>ul{
-    display: flex;
-    gap: 70px;
-    text-align: center;
-}
-
- .sub #header .gnb>ul>li{
-    position: relative;
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-}
- .sub #header .gnb>ul>li:hover>a{
-    color: rgb(254, 112, 61);
-}
-
- .sub #header .gnb a{
-    display: block;
-}
-
- .sub #header .gnb>ul>li ul {    
-    display: block;
-    position: absolute;
-    top: 100px;    
-    left: 50%;
-    z-index: 999;
-    width: 130px;
-    height: 0;
-    line-height: 55px;
-    text-align: center;
-    transform: translateX(-50%);
-    overflow: hidden;
-    transition: 0.5s;
-    background: #fff;
-}
-
- .sub #header .gnb>ul>li ul li{
-    position: relative;
-    border-bottom: 1px solid #ddd;   
-    font-size: 16px;
-    font-weight: 400;
-}
-
- .sub #header .gnb>ul>li .non li:last-child{
-    border-bottom: none;
-} 
-
- .sub #header .gnb>ul>li ul li:hover{
-    color: rgb(254, 112, 61);
-}
-
- .sub #header .gnb>ul::before{
-    content: "";
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: #fff;
-    transition: 0.5s;
-    z-index: 999;
-}
-
- .sub #header .gnb>ul:hover>li ul,
- .sub #header .gnb>ul:hover::before {
-    height: 285px;
-}
-
-
- .sub #header .container .util i{
-    cursor: pointer;
-    font-size: 25px;
-    vertical-align: -2px;
-    color: #333;
-}
-
- .sub #header .container .util i:nth-child(1){
-    margin-right: 20px;
-} 
-/* --------------------------------------------------header----------------------------------------------------- */
-
 .mainVisual{
     position: relative;
 }
@@ -723,5 +613,653 @@
     border-radius: 50%;
     cursor: pointer;
 }
+/*  ***** index끝 *****  */
+
+
+/*  ***** sub_#header 시작 ***** */
+ .sub #header{
+    position: relative;
+    line-height: 100px;
+    background: #fff;
+    /* border-bottom: 1px solid rgba(51, 51, 51, 0.5); */
+    color: #333;
+}
+ .sub #header h1 a{
+    display: block;
+}
+
+
+ .sub #header h1 .before{
+    display: none;
+}
+
+ .sub #header h1 .after{
+    display:inline-block;  
+}
+
+ .sub #header .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ .sub #header .gnb>ul{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+}
+
+ .sub #header .gnb>ul>li{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+ .sub #header .gnb>ul>li:hover>a{
+    color: rgb(254, 112, 61);
+}
+
+ .sub #header .gnb a{
+    display: block;
+}
+
+ .sub #header .gnb>ul>li ul {    
+    display: block;
+    position: absolute;
+    top: 100px;    
+    left: 50%;
+    z-index: 999;
+    width: 130px;
+    height: 0;
+    line-height: 55px;
+    text-align: center;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: 0.5s;
+    background: #fff;
+}
+
+ .sub #header .gnb>ul>li ul li{
+    position: relative;
+    border-bottom: 1px solid #ddd;   
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ .sub #header .gnb>ul>li .non li:last-child{
+    border-bottom: none;
+} 
+
+ .sub #header .gnb>ul>li ul li:hover{
+    color: rgb(254, 112, 61);
+}
+
+ .sub #header .gnb>ul::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+ .sub #header .gnb>ul:hover>li ul,
+ .sub #header .gnb>ul:hover::before {
+    height: 285px;
+}
+
+
+ .sub #header .container .util i{
+    cursor: pointer;
+    font-size: 25px;
+    vertical-align: -2px;
+    color: #333;
+}
+
+ .sub #header .container .util i:nth-child(1){
+    margin-right: 20px;
+} 
+
+/*  ***** sub_#header 끝 ***** */
+
+
+/*  ***** sub_introduce 시작 ***** */
+
+.introduce .topBanner{
+    width: 100%;
+}
+.introduce .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner01.jpg) no-repeat center center / cover;
+    color: white;
+}
+.introduce .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.introduce .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.introduce .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.introduce_main{
+    padding: 100px 0;
+    height: 100%;
+}
+
+.introduce_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.introduce_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.introduce_main .top {
+    position: relative;
+}
+.introduce_main .top .ceo_pic{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+
+}
+
+.introduce_main .top .text{
+    position: absolute;
+    display: block;
+    top: 150px;
+    right: 70px;
+    width: 500px;
+    height: 500px;
+    background: #f06f24;
+    padding: 40px;
+    color: #fff;
+}
+.introduce_main .top .text span{
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.introduce_main .top .text p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.introduce_main .bottom {
+    padding: 520px 0 0 0;
+    background: #fff;
+}
+
+.introduce_main .bottom .sub_title{
+    display: block;
+    font-size: 27px;
+    color: #f06f24;
+    margin-bottom: 10px;
+    
+}
+.introduce_main .bottom p{
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/*  ***** sub_introduce 끝 ***** */
+
+
+
+
+
+
+
+
+
+
+/*  ***** sub_main_work 시작 ***** */
+
+.main_work .topBanner{
+    width: 100%;
+}
+.main_work .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner02.jpg) no-repeat center center / cover;
+    color: white;
+}
+.main_work .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.main_work .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.main_work .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.main_work_main{
+    padding: 100px 0;
+    height: 100%;
+}
+.main_work_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.main_work_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.main_work_main .text{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.work01,
+.work02,
+.work03,
+.work04{
+    margin-bottom: 50px;
+    
+}
+
+.work01 .text,
+.work02 .text,
+.work03 .text,
+.work04 .text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.work01 .text p,
+.work02 .text p,
+.work03 .text p,
+.work04 .text p{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.work01 .pic,
+.work02 .pic,
+.work03 .pic,
+.work04 .pic{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.work01 .pic .left,
+.work02 .pic .left,
+.work03 .pic .left,
+.work04 .pic .left{
+    width: 70%;    
+}
+
+.work01 .pic .right,
+.work02 .pic .right,
+.work03 .pic .right,
+.work04 .pic .right {
+    width: 30%;
+}
+.work01 .pic .right .txt span,
+.work02 .pic .right .txt span,
+.work03 .pic .right .txt span,
+.work04 .pic .right .txt span{
+    text-align: right;
+    display: block;
+    color: #fe703d;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.work01 .pic .right .txt p,
+.work02 .pic .right .txt p,
+.work03 .pic .right .txt p,
+.work04 .pic .right .txt p{
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.work01 .pic .rightArrow_01,
+.work02 .pic .rightArrow_02,
+.work03 .pic .rightArrow_03,
+.work04 .pic .rightArrow_04{
+    position: absolute;
+    top: 32%;
+    right: -6%;
+    transform: translate(-50%, -50%);
+    font-size: 31px;
+}
+.work01 .pic .rightArrow_01 i,
+.work02 .pic .rightArrow_02 i,
+.work03 .pic .rightArrow_03 i,
+.work04 .pic .rightArrow_04 i{
+    border: 1px solid #333;
+    padding: 5px;
+}
+.work01 .pic .rightArrow_01 .xi-angle-right,
+.work02 .pic .rightArrow_02 .xi-angle-right,
+.work03 .pic .rightArrow_03 .xi-angle-right,
+.work04 .pic .rightArrow_04 .xi-angle-right{
+    margin: 0 0 0 -8px;
+} 
+.more{
+    position: absolute;
+    top: 63%;
+    right: -20px;
+}
+.more a{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.more i{
+    padding: 5px;
+    background: orange;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/*  ***** sub_sub_main_work 끝 ***** */
+
+
+/*  ***** sub_management_inno 시작 ***** */
+.managment_inno .topBanner{
+    width: 100%;
+}
+.managment_inno .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner03.jpg) no-repeat center center / cover;
+    color: white;
+}
+.managment_inno .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.managment_inno .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.managment_inno .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.managment_inno_main{
+    padding: 100px 0;
+    height: 100%;
+}
+.managment_inno_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.managment_inno_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.managment_inno_main .text{
+    background: url(../img/management_bg.jpg) no-repeat center center / cover;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 80px 50px;
+    color: #fff;
+}
+.managment_inno_main .text p{
+    color:#fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.managment_inno_main .promise{
+    margin-bottom: 100px;
+}
+
+.managment_inno_main .promise p{   
+    text-align: center; 
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+}
+.managment_inno_main .box{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.managment_inno_main .box>div{    
+    border: 1px solid #ddd;
+    padding: 30px 50px;
+    word-break: keep-all;
+    flex: 1;
+}
+.managment_inno_main .box>div .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.managment_inno_main .box>div .point span{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #fe703d;
+    font-weight: 600;
+}
+.managment_inno_main .box>div .bottom strong{
+    font-size: 19px;
+    font-weight: 600;
+
+}
+.managment_inno_main .box>div .bottom p{
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+
+}
+
+/*  ***** sub_management_inno 끝 ***** */
+
+
+/*  ***** sub_promotion 시작 ***** */
+.promotion .topBanner{
+    width: 100%;
+}
+.promotion .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner04.jpg) no-repeat center center / cover;
+    color: white;
+}
+.promotion .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.promotion .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.promotion .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.promotion_main{
+    padding: 100px 0;
+    height: 100%;
+}
+.promotion_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.promotion_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.promotion_main .text{
+    background: url(../img/promotion_bg.jpg) no-repeat center center / cover;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 80px 50px;
+}
+.promotion_main .text img{
+    margin-bottom: 20px;
+}
+.promotion_main .text p{
+    color:#fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.promotion_main  .concept{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion_main .concept .left{
+    width: 30%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.promotion_main .concept .right {
+    font-size: 22px;
+    margin-bottom: 40px;  
+    line-height: 1.4;
+}
+
+/*  ***** sub_promotion끝 ***** */
+/*  ***** sub_human_talent 시작 ***** */
+
+
+.humen_talent .topBanner{
+    width: 100%;
+}
+.humen_talent .topBanner .top{
+    padding: 150px 0;
+    background: url(../img/topBanner05.jpg) no-repeat center center / cover;
+    color: white;
+}
+.humen_talent .topBanner .top h2{
+    font-size: 52px;
+    font-weight: 500;
+    text-align: center;
+}
+.humen_talent .topBanner .bottom{
+    background: #ddd;   
+    padding: 10px 200px; 
+}
+.humen_talent .topBanner .bottom a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.humen_talent_main{
+    padding: 100px 0;
+    height: 100%;
+}
+.humen_talent_main h3::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: orange;
+    margin: 20px auto 0 auto;
+}
+.humen_talent_main h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.humen_talent_main .text{
+    background: url(../img/human_talent_bg.jpg) no-repeat center center / cover;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 100px 50px;
+    color:#fff;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.humen_talent_main .text .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.humen_talent_main .mental{
+    display: flex;
+    justify-content: space-between;
+}
+.humen_talent_main .mental .left{
+    width: 80%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.humen_talent_main .mental .right .top{
+    font-size: 22px;
+    margin-bottom: 70px;  
+    line-height: 1.4;
+}
+.humen_talent_main .mental .right .bottom .des dl{
+    margin-bottom: 30px;
+
+}
+.humen_talent_main .mental .right .bottom .des dl dt{
+    font-size: 20px;
+    color: #fe703d;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-weight: 600;
+}
+.humen_talent_main .mental .right .bottom .des dl dd{    
+    line-height: 1.8;
+}
+
+/*  ***** sub_human_talent 끝 ***** */
 
 
