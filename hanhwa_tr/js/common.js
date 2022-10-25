@@ -81,6 +81,16 @@ $(function () {
         }
     });
 
+    const work = $(".main_work_main .work");
+    //console.log(work.length);
+
+    /* $(work).each(function (idx, val) {
+        let sliderName = 'leftSlider_0' + index;
+        let sliderNavName = 'rightSlider_0' + index;
+        $(work)[index].id = sliderName;
+        
+    }  */
+
     $('.leftSlider_01').slick({
         arrows:false,
         //autoplay: true,
@@ -88,21 +98,21 @@ $(function () {
         pauseOnFocus: false,     
         asNavFor: ".rightSlider_01"
     });
-       $('.leftSlider_02').slick({
+    $('.leftSlider_02').slick({
         arrows:false,
         //autoplay: true,
         pauseOnHover: false,
         pauseOnFocus: false,     
         asNavFor: ".rightSlider_02"
-       });
-       $('.leftSlider_03').slick({
+    });
+    $('.leftSlider_03').slick({
         arrows:false,
         //autoplay: true,
         pauseOnHover: false,
         pauseOnFocus: false,     
-        asNavFor: ".rightSlider_03"
-       });
-       $('.leftSlider_04').slick({
+    asNavFor: ".rightSlider_03"
+    });
+    $('.leftSlider_04').slick({
         arrows:false,
         //autoplay: true,
         pauseOnHover: false,
@@ -143,30 +153,42 @@ $(function () {
         asNavFor: ".leftSlider_04"       
     });
 
-    $('.rightArrow_01 i:nth-child(1)').on('click', function () {
-        $('.rightSlider_01').slick('slickPrev')
+    const work_left = $(work).find(".xi-angle-left");
+    const work_right = $(work).find(".xi-angle-right");
+
+    $(work_left).on('click', function () {
+        //console.log('zzzzz');
+        //https://ismydream.tistory.com/94 (closet함수에 대해서 공부하기)
+        $(this).closest(".work").find(".pic .left").slick('slickPrev');
     });
-    $('.rightArrow_01 i:nth-child(2)').on('click', function () {
-        $('.rightSlider_01').slick('slickNext')
-    });
-    $('.rightArrow_02 i:nth-child(1)').on('click', function () {
-        $('.rightSlider_02').slick('slickPrev')
-    });
-    $('.rightArrow_02 i:nth-child(2)').on('click', function () {
-        $('.rightSlider_02').slick('slickNext')
-    });
-    $('.rightArrow_03 i:nth-child(1)').on('click', function () {
-        $('.rightSlider_03').slick('slickPrev')
-    });
-    $('.rightArrow_03 i:nth-child(2)').on('click', function () {
-        $('.rightSlider_03').slick('slickNext')
-    });
-    $('.rightArrow_04 i:nth-child(1)').on('click', function () {
-        $('.rightSlider_04').slick('slickPrev')
-    });
-    $('.rightArrow_04 i:nth-child(2)').on('click', function () {
-        $('.rightSlider_04').slick('slickNext')
-    });
+    $(work_right).on('click', function () {
+        //console.log('rrr')
+        $(this).closest('.work').find(".pic .right").slick('slickNext');
+    })
+    // $('.rightArrow_01 i:nth-child(1)').on('click', function () {
+    //     $('.rightSlider_01').slick('slickPrev')
+    // });
+    // $('.rightArrow_01 i:nth-child(2)').on('click', function () {
+    //     $('.rightSlider_01').slick('slickNext')
+    // });
+    // $('.rightArrow_02 i:nth-child(1)').on('click', function () {
+    //     $('.rightSlider_02').slick('slickPrev')
+    // });
+    // $('.rightArrow_02 i:nth-child(2)').on('click', function () {
+    //     $('.rightSlider_02').slick('slickNext')
+    // });
+    // $('.rightArrow_03 i:nth-child(1)').on('click', function () {
+    //     $('.rightSlider_03').slick('slickPrev')
+    // });
+    // $('.rightArrow_03 i:nth-child(2)').on('click', function () {
+    //     $('.rightSlider_03').slick('slickNext')
+    // });
+    // $('.rightArrow_04 i:nth-child(1)').on('click', function () {
+    //     $('.rightSlider_04').slick('slickPrev')
+    // });
+    // $('.rightArrow_04 i:nth-child(2)').on('click', function () {
+    //     $('.rightSlider_04').slick('slickNext')
+    // });
 
 
 })

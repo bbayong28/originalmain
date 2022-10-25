@@ -115,6 +115,55 @@
 #header .container .util i:nth-child(1){
     margin-right: 20px;
 } 
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+#header{
+    position: relative;
+    color: #333;
+    padding: 0 20px;
+}
+
+#header.on{
+    position: relative;
+    width: 100%;    
+    line-height: 100px;
+    z-index: 99;
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#header .before,
+#header.on .before{
+    display: none;  
+}
+#header .after,
+#header.on .after{
+    display:inline-block;  
+}
+
+
+.gnb>ul{
+    display: none;
+}
+
+#header .container .util i{
+    font-size: 23px;
+}
+
+#header .container .util i:nth-child(1){
+    margin-right: 18px;
+} 
+
+
+}
 /* --------------------------------header-------------------------------- */
 .mainVisual{
     position: relative;
@@ -215,6 +264,78 @@
 
 .mainVisual .mainSlider .slick-dots li.slick-active button{
     background:rgb(51, 102, 153);
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+.mainVisual{
+    position: relative;
+}
+
+.mainVisual .mainSlider figure{
+    height: 50vh;
+}
+
+.mainVisual .mainSlider .inner{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mainVisual .mainSlider .inner h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.mainVisual .mainSlider .inner p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.mainVisual .mainArrow img{
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    width: 20px;
+    height: 50px;
+    z-index: 999;
+    opacity: 0.8;
+}
+
+.mainVisual .mainArrow img:nth-child(1){
+    margin: 0 0 0 -200px;
+}
+.mainVisual .mainArrow img:nth-child(2){
+    margin: 0 0 0 200px;
+}
+.mainVisual .mainSlider .slick-dots{
+    position: absolute;
+    inset: auto auto 45px 50% ;
+    transform: translateX(-50%);
+}
+
+
+.mainVisual .mainSlider .slick-dots button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background:#d3d3d3;
+    
+}
+
+.mainVisual .mainSlider .slick-dots li.slick-active button{
+    background:#f64c0e;
+}
 }
 /* --------------------------------mainVisual-------------------------------- */
 
@@ -325,6 +446,69 @@
     margin-bottom: 10px;
 }
 
+
+
+
+
+@media (max-width:768px) {
+.mainContent01{
+    padding: 50px 20px;
+    text-align: center;
+}
+.mainContent01 h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.mainContent01>p{
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.mainContent01 .container{    
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.mainContent01 .container .top{
+    display: flex;
+    gap: 10px;
+    margin-bottom:30px;
+}
+
+.mainContent01 .container .top figure{
+    position: relative;
+    color:#fff
+}
+
+.mainContent01 .container .top figure .box{
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.mainContent01 .container .top figure:hover img{
+    transition: none;
+}
+.mainContent01 .container .top figure strong{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.mainContent01 .container .top figure p{
+    display: none;
+}
+.mainContent01 .container .bottom {
+    display: none;
+}
+
+}
+
 /*-------------------------------- mainContent01 -------------------------------- */
 
 .mainContent02{
@@ -380,6 +564,61 @@
     inset: 0 0 0 0 ;
 }
 
+@media (max-width:768px) {
+    
+.mainContent02{
+    padding: 50px 20px;
+}
+
+.mainContent02 .container{
+    display: flex;
+    max-width: 768px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+}
+.mainContent02 .left {    
+    display: block;
+    text-align: center;
+}
+.mainContent02 .left h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.mainContent02 .left p{
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 300;    
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.mainContent02 .left a{
+    font-size: 13px;
+    font-weight: 300;    
+    margin-bottom: 30px;
+    color: #fff;
+}
+.mainContent02 .container > div{
+    flex:1;
+}
+.mainContent02 .container .right .case{
+    position: relative;
+    padding-bottom: 60%; 
+}
+ 
+.mainContent02 .container iframe{
+    max-width: 700px;
+    width: 100%; 
+    height: 280px; 
+    position: absolute;
+}
+}
+
 /*-------------------------------- mainContent02 -------------------------------- */
 
 
@@ -433,6 +672,64 @@
     line-height: 1.2;
     font-size: 18px;
     font-weight: 400;    
+}
+
+@media (max-width:768px) {
+    
+.mainContent03{
+    padding: 50px 20px;
+    text-align: center;
+}
+/* 
+.mainContent03 .more{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 10px;
+} */
+.mainContent03 .more i{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(96, 156, 219);
+    font-size: 16px;
+}
+
+.mainContent03 h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;    
+    margin-bottom: 10px;
+}
+
+.mainContent03 p{
+    font-size: 13px;
+    font-weight: 300;    
+    margin-bottom: 14px;
+}
+
+.mainContent03 .container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.mainContent03 .container figure{
+    text-align:left;
+}
+
+.mainContent03 .container figure img{
+    margin-bottom: 20px;
+}
+
+.mainContent03 .container figure strong{  
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 400;    
+}
 }
 
 
@@ -884,55 +1181,41 @@
     margin-bottom: 20px;
     text-align: center;
 }
+/* 
 .work01,
 .work02,
 .work03,
 .work04{
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;    
+} 
+*/
+.main_work_main .container > div{
+       margin-bottom: 50px; 
 }
 
-.work01 .text,
-.work02 .text,
-.work03 .text,
-.work04 .text{
+.main_work_main .container > div .text{
     margin-bottom: 40px;
     text-align: center;
 }
-.work01 .text p,
-.work02 .text p,
-.work03 .text p,
-.work04 .text p{
+.main_work_main .container > div .text p{
     margin-bottom: 8px;
     font-size: 18px;
 }
-.work01 .pic,
-.work02 .pic,
-.work03 .pic,
-.work04 .pic{
+.main_work_main .container > div .pic{
     position: relative;
     display: flex;
     gap: 30px;
     justify-content: space-between;
     align-items: center;
 }
-.work01 .pic .left,
-.work02 .pic .left,
-.work03 .pic .left,
-.work04 .pic .left{
+.main_work_main .container > div .pic .left{
     width: 70%;    
 }
 
-.work01 .pic .right,
-.work02 .pic .right,
-.work03 .pic .right,
-.work04 .pic .right {
+.main_work_main .container > div .pic .right{
     width: 30%;
 }
-.work01 .pic .right .txt span,
-.work02 .pic .right .txt span,
-.work03 .pic .right .txt span,
-.work04 .pic .right .txt span{
+.main_work_main .container > div .pic .right .txt span{
     text-align: right;
     display: block;
     color: #fe703d;
@@ -941,61 +1224,40 @@
     margin-bottom: 10px;
 }
 
-.work01 .pic .right .txt p,
-.work02 .pic .right .txt p,
-.work03 .pic .right .txt p,
-.work04 .pic .right .txt p{
+.main_work_main .container > div .pic .right .txt p{
     font-size: 37px;
     font-weight: 600;
     line-height: 1.2;
     text-align: right;
 }
 
-.work01 .pic .rightArrow_01,
-.work02 .pic .rightArrow_02,
-.work03 .pic .rightArrow_03,
-.work04 .pic .rightArrow_04{
+.main_work_main .container > div .pic .arrow{
     position: absolute;
     top: 32%;
     right: -6%;
     transform: translate(-50%, -50%);
     font-size: 31px;
 }
-.work01 .pic .rightArrow_01 i,
-.work02 .pic .rightArrow_02 i,
-.work03 .pic .rightArrow_03 i,
-.work04 .pic .rightArrow_04 i{
+.main_work_main .container > div .pic .arrow i{
     border: 1px solid #333;
     padding: 5px;
 }
-.work01 .pic .rightArrow_01 .xi-angle-right,
-.work02 .pic .rightArrow_02 .xi-angle-right,
-.work03 .pic .rightArrow_03 .xi-angle-right,
-.work04 .pic .rightArrow_04 .xi-angle-right{
+
+.main_work_main .container > div .pic .arrow .xi-angle-right{
     margin: 0 0 0 -8px;
 }
-.work01 .more,
-.work02 .more,
-.work03 .more,
-.work04 .more{
+.main_work_main .container > div .more{
     position: absolute;
     top: 63%;
     right: -20px;
 }
-.work01 .more a,
-.work02 .more a,
-.work03 .more a,
-.work04 .more a{
+.main_work_main .container > div .more a{
     display: block;
     font-size: 15px;
     font-weight: 300;
-
 }
 
-.work01 .more i,
-.work02 .more i,
-.work03 .more i,
-.work04 .more i{
+.main_work_main .container > div .more i{
     padding: 5px;
     background: orange;
     color: #fff;
