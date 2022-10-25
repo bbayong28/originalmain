@@ -48,19 +48,19 @@ $(function () {
         console.log(sct);
     }); 이까지하면 스크롤 숫자 console에 찍힘 */
 
-    // $(window).on('scroll', function () {
-    //     var sct = $(window).scrollTop();
-    //     if (sct > 500) {
-    //         $('.toTop').fadeIn(350);
-    //     } else {
-    //         $('.toTop').fadeOut(1000);
-    //     }
-    //     if (sct > 300) {
-    //         $('#header').addClass('on');
-    //     } else {
-    //         $('#header').removeClass('on');
-    //     }
-    // });
+     $(window).on('scroll', function () {
+         var sct = $(window).scrollTop();
+         if (sct > 400) {
+             $('.toTop').fadeIn(350);
+         } else {
+             $('.toTop').fadeOut(1000);
+         }
+         /* if (sct > 300) {
+             $('#header').addClass('on');
+         } else {
+             $('#header').removeClass('on');
+         } */
+     });
 
     $('.gnb>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {

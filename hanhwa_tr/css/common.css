@@ -508,7 +508,7 @@
 /*-------------------------------- mainContent04 -------------------------------- */
 
 #footer{
-    padding: 15px;
+    padding: 15px 0 25px 0 ;
     background: #333;
     color: rgb(174, 174, 174);
 }
@@ -523,7 +523,6 @@
 #footer .container .top{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;    
     line-height: 2.5;    
     font-size: 16px;
 }
@@ -569,6 +568,7 @@
 #footer .container .bottom .in_bottom{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 #footer .container .bottom .in_bottom p{
@@ -973,20 +973,29 @@
 .work03 .pic .rightArrow_03 .xi-angle-right,
 .work04 .pic .rightArrow_04 .xi-angle-right{
     margin: 0 0 0 -8px;
-} 
-.more{
+}
+.work01 .more,
+.work02 .more,
+.work03 .more,
+.work04 .more{
     position: absolute;
     top: 63%;
     right: -20px;
 }
-.more a{
+.work01 .more a,
+.work02 .more a,
+.work03 .more a,
+.work04 .more a{
     display: block;
     font-size: 15px;
     font-weight: 300;
 
 }
 
-.more i{
+.work01 .more i,
+.work02 .more i,
+.work03 .more i,
+.work04 .more i{
     padding: 5px;
     background: orange;
     color: #fff;
