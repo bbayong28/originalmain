@@ -50,7 +50,7 @@
     font-weight: 500;
 }
 .gnb>ul>li:hover>a{
-    color: rgb(254, 112, 61);
+    color: #fe703d;
 }
 
 .gnb a{
@@ -85,7 +85,7 @@
 } 
 
 .gnb>ul>li ul li:hover{
-    color: rgb(254, 112, 61);
+    color: #fe703d;
 }
 
 .gnb>ul::before{
@@ -417,10 +417,10 @@
     position: relative;
     width: 275px;
     height: 275px;
-    border: 13px solid rgb(206, 226, 255);
+    border: 13px solid #cee2ff;
 }
 .mainContent01 .container .bottom .border div:hover{  
-    border: 13px solid rgb(122, 175, 255)
+    border: 13px solid #7aafff;
 }
 
 
@@ -1385,7 +1385,7 @@
 } 
 */
 .main_work_main .container > div{
-       margin-bottom: 50px; 
+    margin-bottom: 50px; 
 }
 
 .main_work_main .container > div .text{
@@ -1454,7 +1454,7 @@
 
 .main_work_main .container > div .more i{
     padding: 5px;
-    background: orange;
+    background: #f06f24;
     color: #fff;
     border-radius: 50%;
     margin-left: 5px;
@@ -1470,7 +1470,7 @@
 .managment_inno .topBanner .top{
     padding: 150px 0;
     background: url(../img/topBanner03.jpg) no-repeat center center / cover;
-    color: white;
+    color: #fff;
 }
 .managment_inno .topBanner .top h2{
     font-size: 52px;
@@ -1599,7 +1599,7 @@
     left: 0;
     width: 50px;
     height: 4px;
-    background: orange;
+    background: #ffa600;
     margin: 20px auto 0 auto;
 }
 .promotion_main h3{
@@ -1674,7 +1674,7 @@
     left: 0;
     width: 50px;
     height: 4px;
-    background: orange;
+    background: #ffa500;
     margin: 20px auto 0 auto;
 }
 .humen_talent_main h3{
