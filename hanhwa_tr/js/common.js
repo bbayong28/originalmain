@@ -57,9 +57,9 @@ $(function () {
              $('.toTop').fadeOut(1000);
          }
          /* if (sct > 300) {
-             $('#header').addClass('on');
+            $('#header').addClass('on');
          } else {
-             $('#header').removeClass('on');
+            $('#header').removeClass('on');
          } */
      });
 

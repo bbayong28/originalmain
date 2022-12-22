@@ -182,8 +182,8 @@ $(function () {
         if (swiper.realIndex == 0) { 
             $('.move_first').show();
         } else {
-             $('.move_second').show();
-         }
+            $('.move_second').show();
+        }
             console.log('now index :::', swiper.realIndex);
     });
  */
@@ -200,7 +200,7 @@ $(function () {
         //     return false;
         // }
     });
-     
+    
 
     $('.product_slide2').slick({  
         arrows:false,

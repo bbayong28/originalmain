@@ -12,23 +12,18 @@ $(function () {
         $('.gnb').toggleClass('on');
     });
 
-
-     $('.gnb>ul>li>a').on('click', function (event) {
-         if ($(window).width() < 769) {
-             event.preventDefault();
-             $('.smenu').hide();
-             $(this).next().show();
-             //$(this).next().slideToggle();
-         }
- 
-     });
-
+    $('.gnb>ul>li>a').on('click', function (event) {
+        if ($(window).width() < 769) {
+            event.preventDefault();
+            $('.smenu').hide();
+            $(this).next().show();
+            //$(this).next().slideToggle();
+        }
+    });
 
     $(window).on('resize', function () {
         $('.smenu').removeAttr('style');
-        
-    })
-
+    });
     
     $('.mainSlider').slick({
         arrows: false,
