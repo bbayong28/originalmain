@@ -2337,6 +2337,45 @@ react에 슬라이드 넣는데 내가 만들어준 div class에 자꾸 width랑
  이럴땐 slick 에서 넣는거기 때문에 내가 준 class에 !important박으면 됨!
 
 
+---------------------------------------------------------------------------
+11/01
+
+배포 사이트
+
+- netnify 쉬움
+- vercel 가장 쉬움
+- firebase
+- heroku
+- aws  
+
+영화 api 사이트 근데 불법임 다운로드 주소를 포함하고 있는데 토렌트로 돼잇음(https://yts.mx/api#list_movies)
+
+유데미 가격이 혜자 이정안 목소리도 좋고 처음 도입부가 쉽다
+코딩애플 쉽게 알려주는데 남는게 없는 느낌?(쉽게가려다 너무쉽게간다)
+코딩앙마
+애플앙마
+별코딩 - 훅
+코딩알려주는 누나 도입에 한법듣고 치우면됨 
+좀 지루하고 목소리 안좋고 하지만 공부하고싶을 때 개발자의 품격 -  한시간만에 끝내는 리액트 입문
+
+
+npm i react-router-dom sass gh-pages axios
+npm i react-slick slick-carousel
+
+vue가 인기있는 이유 쉬워서
+면접가면 쓸수있는줄아는걸 묻기보다 왜쓰냐고 물을 것이다
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+// 파라미터로 주어지는 문자열은 const로 주어집니다. 변경하려면 문자열을 복사해서 사용하세요.
+int solution(const char* message) {
+    int answer = 0;
+    answer=strlen(message)*2;
+    return answer;
+}
+
 
 
 
