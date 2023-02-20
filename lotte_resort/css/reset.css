@@ -63,3 +63,12 @@ button {
   max-width: 85%;
   margin: auto;
 }
+
+@media (max-width:768px){
+.primary-btn {
+    padding: 10px;
+    background: #f01c1c;
+    font-weight: bold;
+    color: white;
+  }
+}
