@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hotel</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/main.css"> 
+  <script src="./js/jquery-1.12.4.min.js" defer></script>  
+  <script src="./js/slick.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <a href="/">
+          <img src="./img/logo.png" alt="">
+        </a>
+        
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#pages">pages</a> </li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li> <i class="xi-search"></i> </li>
+          <li> <button class="primary-btn">BOOK NOW</button> </li>
+        </ul>
+        <span class="xi-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="content ">
+      <div class="mainVisual">
+        <div class="mainSlider">
+          <figure class="item item01">
+            <div class="inner">
+              <h2>JEJU ARTVILLAS</h2>
+              <p>
+                환상적인 비일상으로의 초대
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="item item02">
+            <div class="inner">
+              <h2>BUYEO</h2>
+              <p>
+                찬란하게 되살아난 예술의 제국
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="item item03">
+            <div class="inner right">
+              <h2>SOKCHO</h2>
+              <p>
+                푸른빛으로 채운 자연의 갤러리
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h3>
+          <span>Book</span><br/> Your Rooms
+        </h3>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="성인">
+          <input type="number" placeholder="영/유/어린이">
+          <input type="submit" value="예약하기">
+        </form>
+      </div>      
+    </div>
+  </section>
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h2 class="back">WELCOME</h2>
+          <h3>WELCOME</h3>
+        </div>
+        <p>저희 롯데 리조트를 이용해주시는 고객님 감사합니다. <br/>
+          저희 롯데리조트는 고객님들이 불편함없이 머물다 가시길 바라며 최상의 서비스를 제공해 드리기 위해 항상 노력합니다.<br />
+          속초, 부여, 제주, 일본에 롯데리조트가 위치해 있으며,<br />
+          다양한 이벤트, 패키지, 프로모션 뿐만 아니라 세미나, 웨딩준비까지도 마련되어 있습니다.<br /> 최고의 재료로 맛있는 음식을 준비하는 다이닝과 다양한 테마파크도 누리시며 롯데리조트에서 사랑하는 사람들과의 추억을 간직하시길 바라겠습니다.
+        </p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="./img/about_bg.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>이번달 고객</span>
+      </div>
+      <div class="box">
+        <h1>850</h1>
+        <hr>
+        <span>이번주</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>오늘의 고객</span>
+      </div>
+      <div class="box">
+        <h1>35500</h1>
+        <hr>
+        <span>총 누적 고객수</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h2>ROOMS</h2>
+        <h3>ROOMS</h3>
+        <p>
+          부드럽고 모던한 인테리어가 자연스러운 편안함을 선사합니다. 
+          사랑하는 연인, 가족, 친구와 행복한 추억을 쌓으시길 바랍니다.
+        </p>
+      </div>  
+      <div class="content mtop">
+        <div class="roomSlider">
+          <figure class="items">
+            <div>
+              <img src="img/room1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>디럭스 - 더블</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>디럭스 더블 룸은 아늑한 공간미를 지닌 대청마루 중첩구조 속에서 편안함을 느낄 수 있는 원룸형 더블 베드 객실입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+                <!-- <p class="price">$250 <span> <br> Per Night </span> </p> -->
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>디럭스 - 트윈</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>디럭스 트윈 룸은 아늑한 공간미를 지닌 대청마루 중첩구조 속에서 편안함을 느낄 수 있는 원룸형 트윈 베드 객실입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>디럭스 - 패밀리 트윈</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>디럭스 패밀리 트윈 룸은 다수의 가족을 위한 객실로, 전통 색채와 문양으로 우리의 멋이 느껴지는 고급스러운 객실입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>디럭스 - 한실(트윈)</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>디럭스 온돌 트윈 룸은 고즈넉한 정취를 지닌 온돌 마루를 통해 지친 몸과 마음을 달랠 수 있는 트윈 베드 객실입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>디럭스 - 트리플(싱글3개)</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>디럭스 패밀리 트윈 룸은 가족 고객을 위한 프라이빗하고 세련된 고급스러운 객실로 편히 쉴 수 있는 객실입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>캐릭터 - 코알라마치룸</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>
+                캐릭터룸은 행복하고 즐거운 기억을 선사합니다. 코알라마치로 꾸며진 모든것들이 동심의 세계로 안내 할 것입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>캐릭터 - 로티룸</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>
+                캐릭터룸은 행복하고 즐거운 기억을 선사합니다. 로티&로리로 꾸며진 모든것들이 동심의 세계로 안내 할 것입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+          <figure class="items">
+            <div>
+              <img src="img/room8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>캐릭터 - 말랑이룸</h2>
+              <div class="rate flex">
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+                <i class="xi-star"></i>
+              </div>
+              <p>캐릭터룸은 행복하고 즐거운 기억을 선사합니다. 말랑이로 꾸며진 모든것들이 동심의 세계로 안내 할 것입니다.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">더 알아보기</button>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="roomArrow">
+          <i class="xi-angle-left"></i>
+          <i class="xi-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h2>PHOTOS</h2>
+        <h3>PHOTOS</h3>
+        <p>다양한 이용시설과 서비스를 사진들 입니다. 예약 시 참고 하세요.</p>
+      </div>
+    </div>
+  
+    <div class="content mtop">
+      <div class="photoSlider">
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo01.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo02.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <difigurev class="items">
+          <div class="img">
+            <img src="./img/photo03.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </difigurev>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo04.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo05.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo06.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo07.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo08.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo09.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+        <figure class="items">
+          <div class="img">
+            <img src="./img/photo10.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="xi-plus"> </span>
+            <p>Photo Title Here.</p>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h2>SERVICES</h2>
+        <h3>SERVICES</h3>
+        <p>다양한 테마파크와 다이닝, 편의시설을 둘러보세요!</p>
+      </div>  
+  
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="xi-glass"></i>
+              <h4>Delious Food</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="xi-fitness-center"></i>
+              <h4>Fintness</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="xi-cookie"></i>
+              <h4>Inhouse Restaurant</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="xi-spa"></i>
+              <h4>Beauty Spa</h4>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./img/service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="ftop flex">
+        <div class="left box">
+          <div class="img">
+            <img src="./img/logo_white.png" alt="">
+          </div>            
+        </div>
+    
+        <div class="fmiddle fmenu">
+          <p class="contact">Contact Us</p>
+          <i class="xi-maker"></i>
+          <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+          <i class="xi-mobile"></i>
+          <label>[88] 657 524 332</label> <br>
+          <i class="xi-mail"></i>
+          <label>info@dentar.com</label> <br>
+        </div>
+
+        <div class="right">
+          <div class="rtop">
+            <select >
+            <option>Family site</option>
+            <option>롯데그룹</option>
+            <option>롯데제과</option>
+            <option>(주)호텔롯데</option>
+            <option>롯데마트</option>
+            <option>롯데시네마</option>
+            <option>롯데홈쇼핑</option>
+            <option>롯데슈퍼</option>
+            <option>롯데닷컴</option>
+            <option>롯데월드</option>
+            <option>롯데면세점</option>
+          </select>
+          </div>
+          <div class="rbottom">
+            <div class="icon">
+              <a href=""><i class="xi-facebook"></i></a>
+              <a href=""><i class="xi-instagram"></i></a>
+              <a href=""><i class="xi-twitter"></i></a>
+              <a href=""><i class="xi-youtube"></i></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="fbottom">
+        <div class="box">
+          <ul class="fmenu flex">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">인재채용</a></li>
+            <li><a href="">제휴제안</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">사이트맵</a></li>
+          </ul>
+        <div class="copyright">
+          <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </footer>
+
+</body>
+</html>
