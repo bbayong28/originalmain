@@ -1,3 +1,5 @@
+
+
 /* header */
 header {
   height: 10vh;
@@ -560,7 +562,7 @@ input {
 footer {
   background: #2B2B2B;
   color: #ababab;
-  padding: 30px 0;
+  padding: 30px 0 10px 0;
 }
 
 footer .ftop{
@@ -613,7 +615,7 @@ footer .icon i{
 }
 
 footer .fbottom{
-  padding: 20px 0 30px 0;
+  padding: 20px 0 10px 0;
 }
 
 footer .fbottom .fmenu{
