@@ -6,12 +6,14 @@ $(function () {
     //     $(this).addClass('on');
     // });
     // $('#header').mouseleave(function() {
-    //     $(this).removeClass('on')        
+    //     $(this).removeClass('on')
     //     var sct = $(window).scrollTop();
     //     if (sct > 0) {
     //         $('#header').addClass('on');
     //     }
     // });
+    
+
 
     $('.mainSlider').on('init afterChange', function (e, s, c) {
         var current = $('.slick-current');
@@ -21,10 +23,18 @@ $(function () {
             $('.mainArrow img').addClass('on')
         }       
     });
+
+    $(window).resize(function() {
+	if($(window).width() < 768) { 		
+        $('.xi-bars').on('click', function () { 
+            $('.gnb').toggleClass('on')
+            $('.sub #header .gnb').toggleClass('on')
+        })
+	} 
+});
     
     $('.mainSlider').slick({
         arrows:false,
-        //autoplay: true,
         dots: true,
         pauseOnHover: false,
         pauseOnFocus:false,        
@@ -44,24 +54,20 @@ $(function () {
     });
     
 
-    /* $(window).on('scroll', function () {
-        var sct = $(window).scrollTop();
-        console.log(sct);
-    }); 이까지하면 스크롤 숫자 console에 찍힘 */
 
-     $(window).on('scroll', function () {
-         var sct = $(window).scrollTop();
-         if (sct > 400) {
-             $('.toTop').fadeIn(350);
-         } else {
-             $('.toTop').fadeOut(1000);
-         }
-         /* if (sct > 300) {
-            $('#header').addClass('on');
-         } else {
-            $('#header').removeClass('on');
-         } */
-     });
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+        if (sct > 400) {
+            $('.toTop').fadeIn(350);
+        } else {
+            $('.toTop').fadeOut(1000);
+        }
+        /* if (sct > 300) {
+        $('#header').addClass('on');
+        } else {
+        $('#header').removeClass('on');
+        } */
+    });
 
     $('.gnb>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
@@ -71,6 +77,8 @@ $(function () {
             $(this).parent().siblings().find('ul').stop().slideUp();
         }
     });
+
+
 
 
     $('#fl').on('change', function () {
@@ -83,14 +91,15 @@ $(function () {
     });
 
     const work = $(".main_work_main .work");
-    //console.log(work.length);
 
-    /* $(work).each(function (idx, val) {
+    /* 
+    $(work).each(function (idx, val) {
         let sliderName = 'leftSlider_0' + index;
         let sliderNavName = 'rightSlider_0' + index;
         $(work)[index].id = sliderName;
         
-    }  */
+    }  
+    */
 
     $('.leftSlider_01').slick({
         arrows:false,
@@ -99,6 +108,7 @@ $(function () {
         pauseOnFocus: false,     
         asNavFor: ".rightSlider_01"
     });
+    
     $('.leftSlider_02').slick({
         arrows:false,
         //autoplay: true,
@@ -106,6 +116,7 @@ $(function () {
         pauseOnFocus: false,     
         asNavFor: ".rightSlider_02"
     });
+
     $('.leftSlider_03').slick({
         arrows:false,
         //autoplay: true,
@@ -113,6 +124,7 @@ $(function () {
         pauseOnFocus: false,     
     asNavFor: ".rightSlider_03"
     });
+
     $('.leftSlider_04').slick({
         arrows:false,
         //autoplay: true,
@@ -191,6 +203,22 @@ $(function () {
     //     $('.rightSlider_04').slick('slickNext')
     // });
 
+
+    
+    //$(window).resize(function() {
+    //    if($(window).width() < 768) { 		
+    //        $('.xi-bars').on('click', function () { 
+    //            console.log('dddd')
+    //            $('.gnb').toggleClass('on')
+    //        })
+    //    } 
+    //});
+
+
+    $('.xi-bars').on('click', function () { 
+        console.log('dddd')
+        $('.gnb').toggleClass('on')
+    })
 
 })
 

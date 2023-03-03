@@ -1,4 +1,4 @@
-/* *{outline: 1px solid #f00;}  */
+/* {outline: 1px solid #f00;} */
 .container{
     max-width: 1200px;
     width: 100%;
@@ -27,9 +27,11 @@
 #header.on .before{
     display: none;  
 }
+
 #header.on .after{
     display:inline-block;  
 }
+
 #header .container{    
     display: flex;
     justify-content: space-between;
@@ -118,12 +120,6 @@
 
 
 
-
-
-
-
-
-
 @media (max-width:768px) {
 
 #header{
@@ -150,18 +146,50 @@
 }
 
 
-.gnb>ul{
-    display: none;
-}
-
 #header .container .util i{
     font-size: 23px;
 }
 
 #header .container .util i:nth-child(1){
     margin-right: 18px;
-} 
+}
 
+
+
+#header .gnb {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    width: calc(100% - 120px);
+    height: 100vh;
+}
+
+#header .gnb.on {
+    left: 0;
+}
+
+#header .gnb>ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    line-height: 8px;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+    border: none;
+}
+
+
+.gnb>ul:hover>li ul,
+.gnb>ul:hover::before {
+    display: none;
+    height: 0;
+}
 
 }
 /* --------------------------------header-------------------------------- */
@@ -266,9 +294,6 @@
     background:#336699;
     background:#f06f24;
 }
-
-
-
 
 
 
@@ -456,6 +481,7 @@
     padding: 50px 20px;
     text-align: center;
 }
+
 .mainContent01 h2{
     margin-bottom: 10px;
     font-size: 30px;
@@ -1117,27 +1143,27 @@
 
 
 /*  ***** sub_#header 시작 ***** */
- .sub #header{
+.sub #header{
     position: relative;
     line-height: 100px;
     background: #fff;
     /* border-bottom: 1px solid rgba(51, 51, 51, 0.5); */
     color: #333;
 }
- .sub #header h1 a{
+.sub #header h1 a{
     display: block;
 }
 
 
- .sub #header h1 .before{
+.sub #header h1 .before{
     display: none;
 }
 
- .sub #header h1 .after{
+.sub #header h1 .after{
     display:inline-block;  
 }
 
- .sub #header .container{
+.sub #header .container{
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -1145,27 +1171,27 @@
     margin: 0 auto;
 }
 
- .sub #header .gnb>ul{
+.sub #header .gnb>ul{
     display: flex;
     gap: 70px;
     text-align: center;
 }
 
- .sub #header .gnb>ul>li{
+.sub #header .gnb>ul>li{
     position: relative;
     font-size: 18px;
     font-weight: 500;
     color: #333;
 }
- .sub #header .gnb>ul>li:hover>a{
+.sub #header .gnb>ul>li:hover>a{
     color: #fe703d;
 }
 
- .sub #header .gnb a{
+.sub #header .gnb a{
     display: block;
 }
 
- .sub #header .gnb>ul>li ul {    
+.sub #header .gnb>ul>li ul {    
     display: block;
     position: absolute;
     top: 100px;    
@@ -1181,22 +1207,22 @@
     background: #fff;
 }
 
- .sub #header .gnb>ul>li ul li{
+.sub #header .gnb>ul>li ul li{
     position: relative;
     border-bottom: 1px solid #ddd;   
     font-size: 16px;
     font-weight: 400;
 }
 
- .sub #header .gnb>ul>li .non li:last-child{
+.sub #header .gnb>ul>li .non li:last-child{
     border-bottom: none;
 } 
 
- .sub #header .gnb>ul>li ul li:hover{
+.sub #header .gnb>ul>li ul li:hover{
     color: #fe703d;
 }
 
- .sub #header .gnb>ul::before{
+.sub #header .gnb>ul::before{
     content: "";
     position: absolute;
     top: 100px;
@@ -1208,20 +1234,20 @@
     z-index: 999;
 }
 
- .sub #header .gnb>ul:hover>li ul,
- .sub #header .gnb>ul:hover::before {
+.sub #header .gnb>ul:hover>li ul,
+.sub #header .gnb>ul:hover::before {
     height: 285px;
 }
 
 
- .sub #header .container .util i{
+.sub #header .container .util i{
     cursor: pointer;
     font-size: 25px;
     vertical-align: -2px;
     color: #333;
 }
 
- .sub #header .container .util i:nth-child(1){
+.sub #header .container .util i:nth-child(1){
     margin-right: 20px;
 } 
 
@@ -1746,3 +1772,80 @@
 /*  ***** sub_human_talent 끝 ***** */
 
 
+
+
+
+
+
+@media (max-width:768px) {
+
+.sub #header{
+    color: #333;
+    padding: 0 20px;
+}
+
+.sub #header.on{
+    position: relative;
+    width: 100%;    
+    line-height: 100px;
+    z-index: 99;
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.sub #header .before,
+.sub #header.on .before{
+    display: none;  
+}
+.sub #header .after,
+.sub #header.on .after{
+    display:inline-block;  
+}
+
+.sub .gnb>ul{
+    display: none;
+}
+
+.sub #header .container .util i{
+    font-size: 23px;
+}
+
+.sub #header .container .util i:nth-child(1){
+    margin-right: 18px;
+}
+.sub #header .gnb {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    width: calc(100% - 120px);
+    height: 100vh;
+}
+
+.sub #header .gnb.on {
+    left: 0;
+}
+
+.sub #header .gnb>ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    line-height: 8px;
+}
+
+.sub #header .gnb>ul>li {
+    position: relative;
+    border: none;
+}
+
+.sub #header .gnb>ul>li ul,
+.sub #header .gnb>ul:hover>li ul,
+.sub #header .gnb>ul:hover::before {
+    display: none;
+    height: 0;
+}
+
+
+}
