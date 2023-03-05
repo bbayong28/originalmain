@@ -7,6 +7,13 @@ window.onload = function () {
 
 
 $(function () {
+
+  $('.m__open').on('click', function () { 
+    $('.m__open').toggleClass('on')
+    $('.gnb').toggleClass('on')
+  })
+
+
   var swiper = new Swiper(".mainSlider", {
     spaceBetween: 100,
     slidesPerView: 'auto',
