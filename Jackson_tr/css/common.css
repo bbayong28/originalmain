@@ -375,6 +375,10 @@ h2::after{
     .product_page .bottom {
         display: none;
     }
+
+    .tabMenu {
+        gap: 8px;
+    }
 } 
 /* -----------------------------------shop끝----------------------------------- */
 
