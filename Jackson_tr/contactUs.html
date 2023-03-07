@@ -11,13 +11,16 @@
   <link rel="stylesheet" href="./css/swiper.css" />
   <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/response.css" />
   <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/join.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
               <li><a href="./product.html">PRODUCT</a></li>
               <li><a href="./project.html">PROJECT</a></li>
               <li><a href="./business.html">BUSINESS</a></li>
-              <li><a href="./contactUs.html">CONTACT US</a></li>
+              <li><a href="./contactUs.html">JOIN</a></li>
             </ul>
         </nav>
 
@@ -68,136 +71,178 @@
     </header>
 
 
-
-    <main class="m_contactUs">
-      <section class="gaip">
-        <div class="container">
-          <div class="top">
-            <h3>CONTACT US</h3>
-            <span>BTOB 관련 상담을 원하시는 고객께서는 언제든지 아래의 방법으로 문의 바랍니다.</span>
-          </div>
-          <div class="bottom">
-            <div class="write_content">
-              <div class="title border">
-                <span>"<span class="red">&#42;</span>"필수 사항 입니다.</span>
-              </div>
-              <table class="table border">
-                <tr>
-                  <th>제목<span class="red">&#42;</span></th>
-                  <td>
-                    <input type="text" maxlength="300" class="caption" style="width:97.5%">
-                  </td>
-
-                </tr>
-                <tr>
-                  <th>분야<span class="red">&#42;</span></th>
-                  <td>
-                    <select name="field" id="field" class="selectBox" style="width:100%;">
-                      <option value="field">질문분야를 선택해주세요.</option>
-                      <option>실업자계좌제훈련/훈련상담/실업자국기직종훈련/국민내일배움카드/K-디지털트레이닝</option>
-                      <option>근로자훈련/국민내일배움카드/K-디지털기초역량/중장년새출발카운슬링</option>
-                      <option>사업주지원훈련/지역실업자/지산일</option>
-                      <option>일학습병행제/과정평가형</option>
-                      <option>컨소시엄훈련/지역산업맞춤형/고용디딤돌/청년취업아카데미</option>
-                      <option>지도점검/부정수급/전자민원서비스</option>
-                      <option>HRD-Net 홈페이지/모바일 서비스/전자민원/지도점검/부정수급</option>
-                      <option>통합심사/이수자평가/인증평가/훈련교사</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th>공개여부</th>
-                  <td class="source">
-                    <div class="checks">
-                      <input type="radio" name="disclosure" id="open" checked>
-                      <label for="open">공개</label>
-                    </div>
-                    <div class="checks">
-                      <input type="radio" name="disclosure" id="nopen">
-                      <label for="nopen">비공개</label>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    내용<span class="red">&#42;</span>
-                  </th>
-                  <td class="mmmmmm">
-                    <form id="frm_textArea" name="frm_textArea">
-                      <textarea cols="100" rows="8" class="form-control" id="textArea_byteLimit"
-                        name="textArea_byteLimit" onkeyup="fn_checkByte(this)"
-                        placeholder="HRD-Net 고객센터는 HRD-Net 전산시스템의 사용법, 장애사항, 개선의견 등을 접수하여 답변드리고 있습니다. 국민내일배움카드 발급 지원자격 문의, 장려금 지원 등 행정업무에 대한 상담은 고용노동부 고객상담센터에서 지원중이므로 고용노동부 고객센텨(1350 유료)으로 문의하여 주시기 바랍니다. 또한, 내용입력시 개인정보(주민번호)가 있을 경우 정보가 노출될 수 있으므로 유의하여 주시고 개인정보가 없을 경우는 가급정 공개로 하셔서 많은 분들과 내용을 공유하시기 바랍니다."
-                        style="padding:10px; resize: none; outline: none; margin-bottom: 10px;"></textarea>
-                    </form>
-                    <p style="margin-bottom:5px;">한글 1500자, 영문 3000자 까지 입력 가능합니다.</p>
-                    <sup>(<span id="nowByte">0</span>/3000bytes)</sup>
-                  </td>
-                </tr>
-                <tr>
-                  <th>파일첨부(선택)</th>
-                  <td>
-                    <div class="file_box">
-                      <div class="filebox preview-image">
-                        <img src="../img_default.png" alt="" class="upload-display">
-                        <input type="file" id="input-file01" class="upload-hidden">
-                        <label for="input-file01" style="background:url(../btn-imgadd.png) no-repeat"></label>
-                        <p class="file_name">파일명</p>
-                      </div>
-                      <div class="filebox preview-image">
-                        <img src="../img_default.png" alt="" class="upload-display">
-                        <input type="file" id="input-file02" class="upload-hidden">
-                        <label for="input-file02" style="background:url(../btn-imgadd.png) no-repeat"></label>
-                        <p class="file_name">파일명</p>
-                      </div>
-                      <div class="filebox preview-image">
-                        <img src="../img_default.png" alt="" class="upload-display">
-                        <input type="file" id="input-file03" class="upload-hidden">
-                        <label for="input-file03" style="background:url(../btn-imgadd.png) no-repeat"></label>
-                        <p class="file_name">파일명</p>
-                      </div>
-                    </div>
-                    <div class="txt">
-                      <p>이미지 가능 확장자 : jpg, gif,bmp</p>
-                      <p>파일 가능 확장자 : txt,hwp,xls,ppt,doc,zip,pdf</p>
-                      <p style="margin-bottom:0;">첨부파일은 한 개 등록 가능하며 사이즈를 1M로 제한합니다.</p>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+    <main id="main" class="cmain">
+      <h3>회원가입</h3>
+      <form name="frm" onsubmit="return check();" method="post" action="">
+        <!--javascript:avoid(0);-->
+        <!--action="javascript:alert('성공');"-->
+        <div class="box">
+          <div class="id">
+            <p><label for="m_id">아이디</label></p>
+            <div class="out">
+              <input type="text" id="m_id" name="id" />
+              <span class="id_place">@naver.com</span>
             </div>
-            <div class="personal_information">
-              <div class="title">
-                <h3>개인정보 수집 및 이용에 대한 동의</h3>
+            <p id="noalert"></p>
+          </div>
+          <div class="password">
+            <p><label for="password">비밀번호</label></p>
+            <div class="out">
+              <input type="password" id="password" name="password" />
+              <span>
+                <img src="./img/m_icon_pw_step.png" alt="" />
+              </span>
+            </div>
+          </div>
+          <div class="re_password">
+            <p><label for="re_password">비밀번호 재확인</label></p>
+            <div class="out">
+              <input type="password" id="re_password" name="re_password" />
+              <span>
+                <img src="./img/m_icon_pw_check.png" alt="" />
+              </span>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="name">
+              <p><label for="name">이름</label></p>
+              <div class="out">
+                <input type="text" id="name" name="name" />
               </div>
-              <div class="box">
-                <p>HRD-Net 서비스 민원 상담을 위해 성명, 연락처를 수집 및 이용합니다.</p>
-                <p>( 수집목적 : HRD-Net 서비스 민원상담, 보유기간:5년 )</p>
-                <p>개인정보 수집 및 취급 위탁에 동의하시지 않는 경우 개선 및 제안요청 작성이 불가능합니다.</p>
+            </div>
+            <div class="birth">
+              <div class="birth2">
+                <p><label for="birth2">생년월일</label></p>
+                <div class="out_g birtho">
+                  <input type="text" class="datepicker" data-language="en" data-multiple-dates="3"
+                    data-multiple-dates-separator=", " data-position="top left" />
+                </div>
               </div>
-              <div class="agree">
-                <p>개인정보 수집 및 이용에 동의 하십니까?</p>
-                <div class="input">
-                  <div class="checks">
-                    <input id="y" type="radio" name="agree" checked>
-                    <label for="y">동의합니다.</label>
-                  </div>
-                  <div class="checks">
-                    <input id="n" type="radio" name="agree">
-                    <label for="n">동의하지 않습니다.</label>
+
+            </div>
+            <div class="gender">
+              <p>성별</p>
+              <div class="out_g thick">
+                <input type="radio" name="gender" value="female" checked />
+                여자 <input type="radio" name="gender" value="male" />남자
+              </div>
+            </div>
+            <div class="email">
+              <p class="inline">
+                <label for="email">본인 확인 이메일</label>
+              </p>
+              <span>(선택)</span>
+              <div class="out">
+                <div class="form_inline">
+                  <div class="form_group">
+                    <input type="text" id="email1" name="email1" class="ui_input" placeholder="이메일 아이디" col="10" />
+                    @
+                    <input type="text" id="email2" name="email2" class="ui_input" placeholder="이메일 주소" />
+                    <select id="email3" name="email3" title="이메일 주소 선택" class="ui_select"
+                      onchange="selectEmail(this.value);">
+                      <option value="">이메일주소 직접입력</option>
+                      <option value="naver.com">naver.com</option>
+                      <option value="nate.com">nate.com</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="yahoo.com">yahoo.com</option>
+                      <option value="hanmail.net">hanmail.net</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="phone_number">
+            <p><label for="call">휴대전화</label></p>
+            <div class="out_pp">
+              <select name="number" id="number">
+                <option value="number">대한민국 +82</option>
+                <option value="233">가나 +233</option>
+                <option value="241">가봉 +241</option>
+                <option value="592">가이아나 +592</option>
+                <option value="220">감비아 +220</option>
+                <option value="502">과테말라 +502</option>
+                <option value="1671">괌 +1 671</option>
+                <option value="1473">그레나다 +1 473</option>
+                <option value="30">그리스 +30</option>
+                <option value="224">기니 +224</option>
+                <option value="245">기니비사우 +245</option>
+                <option value="264">나미비아 +264</option>
+                <option value="674">나우루 +674</option>
+                <option value="234">나이지리아 +234</option>
+                <option value="672">남극,오스트레일리아의외 +672</option>
+                <option value="27">남아프리카공화국 +27</option>
+                <option value="31">네덜란드 +31</option>
+                <option value="599">네덜란드령보네르 +599</option>
+                <option value="297">네덜란드령아루바 +297</option>
+                <option value="977">네팔 +977</option>
+                <option value="47">노르웨이 +47</option>
+                <option value="64">뉴질랜드 +64</option>
+                <option value="683">뉴질랜드령니우에 +683</option>
+                <option value="690">뉴질랜드령토켈라우제도 +690</option>
+                <option value="227">니제르 +227</option>
+                <option value="505">니카라과 +505</option>
+                <option value="82" selected>대한민국 +82</option>
+                <option value="45">덴마크 +45</option>
+                <option value="299">덴마크령그린란드 +299</option>
+                <option value="298">덴마크령페로제도 +298</option>
+                <option value="1809">도미니카공화국 +1 809</option>
+                <option value="1829">도미니카공화국 2 +1 829</option>
+                <option value="1849">도미니카공화국 3 +1 849</option>
+                <option value="49">독일 +49</option>
+                <option value="359">불가리아 +359</option>
+                <option value="55">브라질 +55</option>
+                <option value="673">브루나이 +673</option>
+                <option value="685">사모아 +685</option>
+                <option value="966">사우디아라비아 +966</option>
+                <option value="378">산마리노 +378</option>
+                <option value="268">스와질랜드 +268</option>
+                <option value="46">스웨덴 +46</option>
+                <option value="41">스위스 +41</option>
+                <option value="34">스페인 +34</option>
+                <option value="421">슬로바키아 +421</option>
+                <option value="386">슬로베니아 +386</option>
+                <option value="963">시리아 +963</option>
+                <option value="232">시에라리온 +232</option>
+                <option value="65">싱가포르 +65</option>
+                <option value="44">영국 +44</option>
+                <option value="290">영국령세인트헬레나 +290</option>
+                <option value="246">영국령인도양지역 +246</option>
+                <option value="598">우루과이 +598</option>
+                <option value="998">우즈베키스탄 +998</option>
+                <option value="380">우크라이나 +380</option>
+                <option value="964">이라크 +964</option>
+                <option value="98">이란 +98</option>
+                <option value="972">이스라엘 +972</option>
+                <option value="63">필리핀 +63</option>
+                <option value="36">헝가리 +36</option>
+                <option value="61">호주 +61</option>
+                <option value="852">홍콩 +852</option>
+              </select>
+            </div>
+            <div class="gkgkgk">
+              <div class="out_pp small">
+                <input id="call" type="text" placeholder="전화번호 입력" />
+              </div>
+              <a href="#!" class="give">인증번호 받기</a>
+              <!--여기 클릭할때 형식에 맞춰서 적었는지 검사-->
+            </div>
+    
+            <div class="out_pp">
+              <input type="text" class="phone" placeholder="인증번호 입력하세요" />
+            </div>
+          </div>
         </div>
-      </section>
+        <div class="join">
+          <input type="submit" class="joinn" value="가입하기" />
+        </div>
+      </form>
     </main>
 
 
 
 
-
-    <footer id="footer">
+    <footer id="footer" class="cfooter">
 
       <div class="top">
         <div class="container">

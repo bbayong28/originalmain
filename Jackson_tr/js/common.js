@@ -1,11 +1,11 @@
 // 로딩하는 방법! 
 // 윈도우가 로드가 되면.loading을 display:none을 하여라!!!!!!!
-$(function () {
-    $(window).load(function () {
-        $(".loading").css("display","none")
-    })
-
-}) 
+//$(function () {
+//    $(window).load(function () {
+//        $(".loading").css("display","none")
+//    })
+//
+//}) 
 
 window.onload = function () {
     
@@ -31,7 +31,7 @@ window.onload = function () {
     MD();  
 
 }
- 
+
 //내가 하고 싶은 것 
 //1. 모달창이 떴을 때(modal.on일때)
 //2. 바탕의 스크롤이 안되게 막자!
@@ -213,13 +213,13 @@ $(function () {
     })
 
 
-    $('.reviewArrow i:nth-child(1)').on('click', function () {
+    /* $('.reviewArrow i:nth-child(1)').on('click', function () {
         $('.product_slide2').slick('slickPrev')
     });
 
     $('.reviewArrow i:nth-child(2)').on('click', function () {
         $('.product_slide2').slick('slickNext')
-    });
+    }); */
 
     //$('h2').each(function () { 
     //    console.log(this);

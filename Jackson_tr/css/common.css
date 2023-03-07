@@ -1,7 +1,16 @@
-/* *{
-    outline: 1 px solid #f00;
-} 
- */
+
+/* body{
+    position: relative;
+}
+
+.loading{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    z-index: 9999;
+} */
+
 #header .container{    
     display: flex;
     justify-content: space-between;
@@ -384,25 +393,34 @@ h2::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 200px;
+}
+
+.sofa .container>div:last-child {
     margin-bottom: 100px;
 }
+
 .after_second{
     margin-bottom: 100px;
 }
+
 .sofa .container div h3{
     font-size: 27px;
     font-weight: 700;
     margin-bottom: 12px;
     color: #000;
 }
+
 .sofa .container>div>.txt{
     padding: 20px 0;
 }
+
 .sofa .container div p{
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 14px;
 }
+
 .sofa .container div span{
     display: block;
     font-size: 15px;
@@ -453,7 +471,7 @@ h2::after{
         font-weight: 300;
         margin-bottom: 5px;
     }
-   .aos-animate {
+    .aos-animate {
     display: block;
     transition: none;
 
@@ -474,7 +492,7 @@ h2::after{
     -o-animation: none !important;
     -ms-animation: none !important;
     animation: none !important;
-  }
+    }
 
 }
 /* -----------------------------------sofa끝----------------------------------- */
@@ -671,68 +689,6 @@ h2::after{
     font-weight: 400;    
     padding-bottom: 10px;
 }
-
-
-/*
-.right .tab_content li{
-    display: block;
-    position: absolute;
-    width: 100%;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
- .all01 .right .tab_content li:nth-child(1){
-    width: 10%;  
-    top: 68%;
-    left: 24%;
-    
-}
-.all01 .right .tab_content li:nth-child(2){
-    width: 10%;    
-    top: 78%;
-    left: 48%;
-    
-}
-.all01 .right .tab_content li:nth-child(3){
-    width: 10%;
-    top: 57%;
-    left: 71%;    
-}
-
-.all02 .right .tab_content li:nth-child(1){
-    width: 10%;  
-    top: 55%;
-    left: 15%;
-    
-}
-.all02 .right .tab_content li:nth-child(2){
-    width: 10%;    
-    top: 76%;
-    left: 49%;
-    
-}
-.all02 .right .tab_content li:nth-child(3){
-    width: 10%;
-    top: 62%;
-    left: 83%;    
-} 
-.right .tab_content .mation{
-    padding: 5px 0;
-    text-align: center;
-    background: #e8e8e8;
-}
-.mation .oj_name{
-    font-size: 9px;
-    font-weight: 400;
-    margin-bottom: 3px;
-}
-.mation .price {
-    font-size: 9px;
-    font-weight: 400;
-}
-*/
 
 .interior .button {
     transform: translate(0, 0);
@@ -1024,8 +980,9 @@ h2::after{
         font-size: 13px;
         /* font-weight: 400; */
         font-weight: 300;
-        margin-bottom: 15px;    }
-     
+        margin-bottom: 15px;    
+    }
+    
     #footer  .top ul li~li::before {
         content: "";
         display: inline-block;
@@ -1033,7 +990,7 @@ h2::after{
         height: 13px;
         background: #ddd;
         margin: 0 10px;
-}
+    }
     #footer .bottom .in_top  p {
         font-size: 13px;
         font-weight: 300;
@@ -1183,7 +1140,7 @@ h2::after{
 .m_product .thing .left{
     position: absolute;
     top: 650px;
-    left: 150px;
+    left: 100px;
 
 }
 .m_product .thing .left ul li{
@@ -1423,6 +1380,14 @@ h2::after{
 
 /* -----------------------------------project 끝----------------------------------- */
 /* -----------------------------------contactUs 시작----------------------------------- */
+
+.cmain h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
 .m_contactUs {
     padding: 50px 0;
 }
@@ -1529,19 +1494,19 @@ h2::after{
 
 
 .filebox .upload-thumb-wrap {  /* 추가될 이미지를 감싸는 요소 */
-  display: inline-block;
-  width: 100px;
-  padding: 2px;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+    display: inline-block;
+    width: 100px;
+    padding: 2px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .filebox .upload-display img {  /* 추가될 이미지 */
-  display: block;
-  width: 100px;
-  height: 100px;
+    display: block;
+    width: 100px;
+    height: 100px;
 }
 .personal_information .box{
     border: 5px solid #ddd;
@@ -1562,9 +1527,13 @@ h2::after{
     margin-left: 30px;
 }
 
+.cfooter{
+    margin-top: 100px;
+}
+
 /* -----------------------------------contactUs 끝----------------------------------- */
 /* -----------------------------------business 시작----------------------------------- */
- .m_business .container{
+.m_business .container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -1666,6 +1635,7 @@ h2::after{
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     z-index: 999;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .modal_inner {
@@ -1674,60 +1644,48 @@ h2::after{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
-    height: 700px;
+    height: 770px;
     background: #f7f7f7;
-    padding: 20px 30px;
+    padding: 30px;
     text-align: left;
     color: #666;
 
 }
-/*
-
-.modal{
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 1000px;
-    height: 700px;
-    background: #f7f7f7;
-    padding: 20px 30px;
-    text-align: left;
-    color:#666;
-    z-index: 9999;
-}*/
 .modal_inner h4{
-    font-size: 45px;
-    font-weight: 600;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
 }
-.modal_inner .des{
-    padding: 10px 0;
-}
+
 .modal_inner .des strong{
     display: block;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333;
 }
 .modal_inner .des p{    
     font-size: 13px;
     margin-bottom: 15px;
     font-weight: 600;
 }
+
+.modal_inner .des .spans{
+    margin-bottom: 30px;
+}
+
 .modal_inner .des span{
     display: block;
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom:10px;
+    line-height: 1.4;
 }
 .modal_inner .btn{
-   text-align: center;
-   outline: none;
-   border: none;
+    text-align: center;
+    outline: none;
+    border: none;
 
 }
 .modal_inner button{
@@ -1741,17 +1699,253 @@ h2::after{
     display: block;
 }
 
-/* .modal_background.on .modal{
-    display: block;
-}  */
-
 .not_scroll{
     /* position: fixed; */
     overflow: hidden;
     /* width: 100%;
     height: 100%; */
 }
-/* .not_scroll section{
-    position: relative;
-    top: 0;
-}  */
+
+
+
+
+.box {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    background: #fff;
+    outline: 0;
+    border: none;
+}
+
+input[type="text"]:disabled {
+    background: #ccc;
+}
+
+.middle {
+    margin: 50px 0;
+}
+
+.out img {
+    width: 17px;
+    height: 20px;
+}
+
+.out {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    width: 100%;
+    padding: 10px 20px 10px 14px;
+}
+
+.out>input{
+    width: 80%;
+}
+
+.id_place {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.birtho {
+    background: #fff;
+    width: 460px;
+    border: 1px solid #dadada;
+    padding: 10px 20px 10px 14px;
+}
+
+.datepicker {
+    width: 100px;
+}
+
+.y_m_d {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.out_y {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    width: 146.7px;
+    padding: 10px 30px 10px 14px;
+}
+
+.out_y input {
+    width: 100%;
+}
+
+.out_y input::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.out_m {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    width: 146.7px;
+    padding: 10px 30px 10px 14px;
+}
+
+.out_m select {
+    width: 100%;
+    border: none;
+}
+
+.out_d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    width: 146.7px;
+    padding: 10px 30px 10px 14px;
+}
+
+.out_d input {
+    width: 100%;
+}
+
+.out_d input::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.out_g {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 10px 20px 10px 14px;
+}
+
+.out_g select {
+    width: 100%;
+    font-size: 15px;
+    border: none;
+}
+
+.thick {
+    height: 45px;
+    padding: 12px 20px 10px 14px;
+}
+
+.email .out {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.email span {
+    font-size: 13px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.email .inline {
+    display: inline-block;
+}
+
+#email1,
+#email2 {
+    width: 84px;
+    height: 20px;
+    font-size: 13px;
+}
+
+#email3 {
+    outline: none;
+    border: 1px solid #dadada;
+}
+
+.phone {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.out_pp {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    width: 100%;
+    padding: 10px 20px 10px 14px;
+    margin-bottom: 10px;
+}
+
+.out_pp>input{
+    width: 80%;
+}
+
+.out_pp::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8e8e8e;
+}
+
+.gkgkgk {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    max-width: 85%;
+    width: 100%;
+    display: inline-block;
+}
+
+.give {
+    display: inline-block;
+    background: #333333;
+    color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #f5f6f7;
+}
+
+#number {
+    width: 100%;
+    font-size: 15px;
+    border: none;
+}
+
+.join {
+    width: 460px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    background: #333333;
+}
+
+.join .joinn {
+    width: 100%;
+    background: #333333;
+    cursor: pointer;
+    padding: 15px 10px;
+    color: #fff;
+    font-weight: 500;
+}
